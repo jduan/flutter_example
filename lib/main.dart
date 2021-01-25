@@ -104,6 +104,10 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            const Text('Reset counter'),
+            TextField(
+              onChanged: (String val) => _counter = int.parse(val),
+            )
           ],
         ),
       ),
